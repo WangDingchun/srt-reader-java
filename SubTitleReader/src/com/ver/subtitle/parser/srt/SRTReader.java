@@ -42,9 +42,7 @@ public class SRTReader {
 		TuziSubTitleInfoTreeMap mTuziSubTitleInfoTreeMap = new TuziSubTitleInfoTreeMap();
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
-			while (true) {
-				parse(mTuziSubTitleInfoTreeMap, br);
-			}
+			parse(mTuziSubTitleInfoTreeMap, br);			
 		} catch (EOFException e) {
 			// Do nothing
 		} catch (IOException e) {
